@@ -1,0 +1,12 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding:10px 20px;
+}
+
+header .son{
+    margin: 0 10px;
+    
+}
