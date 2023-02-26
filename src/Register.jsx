@@ -1,6 +1,10 @@
+import "./CSS/Login.css";
+
 function Register(props){
     return(
-        <div>注册页面</div>
+        <div className="box">
+            <div>注册</div>
+        </div>
     )
 }
 

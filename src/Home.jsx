@@ -28,46 +28,66 @@ function Home(props){
         <Context.Provider value={user}>
         <div>  
             <header className="header">
-                <div>
-                    <Button type="primary" onClick={()=>nav("/")} className="son">
-                        首页
-                    </Button>
-                    <Button type="primary" onClick={()=>nav("/anime")} className="son">
-                        剧番
-                    </Button>
-                    <Button type="primary" onClick={()=>nav("/music")} className="son">
-                        音乐
-                    </Button>
-                    <Button type="primary" onClick={()=>nav("/comic")} className="son">
-                        漫画
-                    </Button>
+                <div className="header-box">
+                    <div className="header-button">
+                        <Button type="primary" onClick={()=>nav("/")} >
+                            首页
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" onClick={()=>nav("/anime")} >
+                            剧番
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" onClick={()=>nav("/music")} >
+                            音乐
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" onClick={()=>nav("/comic")} >
+                            漫画
+                        </Button>
+                    </div>
                 </div>
-                <Search placeholder="search" onSearch={onSearch} enterButton style={{width:400}} />
-                <div>
-                    <Button type="primary" 
-                        onClick={()=>nav("/login")}
-                        className="son"
-                    >
-                        登录
-                    </Button>
-                    <Button type="primary" 
-                        onClick={()=>user.isLog?nav("/center"):nav("/login")}  
-                        className="son"
-                    >
-                        消息
-                    </Button>
-                    <Button type="primary" 
-                        onClick={()=>user.isLog?nav("/center"):nav("/login")}  
-                        className="son"
-                    >
-                        历史
-                    </Button>
-                    <Button type="primary" 
-                        onClick={()=>user.isLog?nav("/center"):nav("/login")}  
-                        className="son"
-                    >
-                        个人
-                    </Button>
+                <div className="header-box" >
+                    <Search 
+                        placeholder="search" 
+                        onSearch={onSearch} 
+                        enterButton 
+                        style={{width:400,height:16,}} 
+                    />
+                </div>
+                <div className="header-box header-nav" >
+                    <div className="header-navbar">{user.isLog?user.name:"未登录"}</div>
+                    <div className="header-button">
+                        <Button type="primary" 
+                            onClick={()=>user.isLog?nav("/space"):nav("/login")}
+                        >
+                            {user.name}
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" 
+                            onClick={()=>user.isLog?nav("/message"):nav("/login")}  
+                        >
+                            消息
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" 
+                            onClick={()=>user.isLog?nav("/history"):nav("/login")}  
+                        >
+                            历史
+                        </Button>
+                    </div>
+                    <div className="header-button">
+                        <Button type="primary" 
+                            onClick={()=>user.isLog?nav("/center"):nav("/login")}  
+                        >
+                            个人
+                        </Button>
+                    </div>
                 </div>
             </header>
             <Outlet context={[user,setUser]}></Outlet>

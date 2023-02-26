@@ -3,10 +3,37 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding:10px 20px;
 }
 
-header .son{
-    margin: 0 10px;
-    
+.header-box{
+    margin:10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-button{
+    margin:1px 10px;
+    height: 16px;
+}
+
+.header-nav{
+    position: relative;
+}
+
+.header-navbar{
+    display: none;
+    position: absolute;
+    top:10px;
+    left:-150px;
+    z-index: 2;
+    width: 150px;
+    height: 200px;
+    background-image: linear-gradient(to right ,#66ccff, #597ef7);
+    border-radius: 15px;
+}
+
+.header-nav:hover .header-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -9,7 +9,9 @@ import ZSearch from './ZSearch';
 import ZAnime from './ZAnime';
 import ZComic from './ZComic';
 import ZMusic from './ZMusic';
-
+import ZMessage from './ZMessage';
+import ZHistory from './ZHistory';
+import ZSpace from './ZSpace';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}>
+            <Route path="/space" element={<ZSpace/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
             <Route path="/forgot" element={<Forgot/>}></Route>
@@ -25,6 +28,8 @@ function App() {
             <Route path="/anime" element={<ZAnime/>}></Route>
             <Route path="/music" element={<ZMusic/>}></Route>
             <Route path="/comic" element={<ZComic/>}></Route>
+            <Route path="/message" element={<ZMessage/>}></Route>
+            <Route path="/history" element={<ZHistory/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

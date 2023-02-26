@@ -1,7 +1,11 @@
+import "./CSS/Login.css";
+
 function Forgot(props){
     return(
-        <div>
-            <p>忘记密码</p>
+        <div className="box">
+            <div>
+                <p>找回密码</p>
+            </div>
         </div>
     )
 }

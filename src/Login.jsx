@@ -1,5 +1,5 @@
 //import { useState } from "react";
-import {Button,Input} from "antd";
+import {Button} from "antd";
 import "antd/dist/reset.css";
 import { useNavigate,useOutletContext } from "react-router-dom";
 import "./CSS/Login.css";
@@ -9,8 +9,11 @@ import axios from "axios";
 export default function Login(props){
     let [user,setUser]=useOutletContext();
     let navigate=useNavigate();
-    const changeLog=(e)=>{
-        setUser({[e.target.name]:e.target.value});
+    const changeAccount=(e)=>{
+        setUser({...user,account:e.target.value});//改变账号 密码
+    }
+    const changePassword=(e)=>{
+        setUser({...user,password:e.target.value});//改变账号 密码
     }
     const log=()=>{
         let message={account:user.account,password:user.password}
@@ -37,41 +40,45 @@ export default function Login(props){
     }
     return(
         <div className="box">
-        <div className="login">
-            <div>
-                账号：
-                <Input 
-                    type="text"
-                    value={user.account}
-                    name="account"
-                    onChange={(e)=>{changeLog(e)}}
-                    className=""
-                    style={{width:200}}
-                />
-                <Button type="dashed" onClick={()=>navigate("/register")}>立即注册</Button>
-            </div>
-            <div>
-                密码：
-                <Input  
-                    type="text"
-                    value={user.password}
-                    name="password"
-                    onChange={(e)=>{changeLog(e)}}
-                    style={{width:200}} 
-                />
-                <Button type="dashed" onClick={()=>navigate("/forgot")}>忘记密码</Button>
-            </div>
-            <div>
-            <Button type="dashed" onClick={log} style={{width:100}}>登录</Button>
-            </div>
-            <div>
-                <br />
-                <p>如遇到页面问题,请联系tel:95599</p>
-                <p>账号：{user.account}</p>
-                <p>密码：{user.password}</p>
+            <div className="login">
+                <div style={{margin:50}}>
+                    请登录
+                </div>
+                <div>
+                    账号：
+                    <input 
+                        type="text"
+                        value={user.account}
+                        name="account"
+                        onChange={(e)=>{changeAccount(e)}}
+                        className=""
+                        style={{width:200}}
+                    />
+                    <Button type="dashed" onClick={()=>navigate("/register")} style={{margin:10}}>
+                        立即注册
+                    </Button>
+                </div>
+                <div>
+                    密码：
+                    <input  
+                        type="password"
+                        value={user.password}
+                        name="password"
+                        onChange={(e)=>{changePassword(e)}}
+                        style={{width:200}} 
+                    />
+                    <Button type="dashed" onClick={()=>navigate("/forgot")} style={{margin:10}}>
+                        忘记密码
+                    </Button>
+                </div>
+                <div>
+                    <br />
+                    <Button type="dashed" onClick={log} style={{width:100}}>登录</Button>
+                </div>
+                <div style={{margin:50}}>
+                    <p>如遇到页面问题,请联系tel:06558204</p>
+                </div>
             </div>
         </div>
-        </div>
-        
     )
 }
