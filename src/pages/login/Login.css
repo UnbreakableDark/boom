@@ -1,0 +1,23 @@
+
+.box {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1072px;
+    height: 603px;
+    background-image: linear-gradient(to right ,#66ccff, #597ef7);
+    border-radius: 25px;
+}
+.login {
+    margin: auto;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 0px;
+    width: 400px;
+}
+.login div {
+    margin:10px
+}

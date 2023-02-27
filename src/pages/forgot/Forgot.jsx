@@ -1,4 +1,4 @@
-import "./CSS/Login.css";
+import "./Forgot.css";
 
 function Forgot(props){
     return(

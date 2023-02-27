@@ -1,4 +1,4 @@
-import "./CSS/Login.css";
+import "./Register.css"
 
 function Register(props){
     return(

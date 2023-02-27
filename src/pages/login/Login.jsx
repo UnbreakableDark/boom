@@ -2,7 +2,7 @@
 import {Button} from "antd";
 import "antd/dist/reset.css";
 import { useNavigate,useOutletContext } from "react-router-dom";
-import "./CSS/Login.css";
+import "./Login.css";
 import axios from "axios";
 
 

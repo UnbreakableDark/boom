@@ -1,0 +1,23 @@
+.anime-list{
+    display: grid;
+    height: 160px;
+    width: 200px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    text-decoration:none;
+    color: black;
+    padding: 10px;
+
+}
+/*
+    background-color: aqua;
+*/
+
+.anime-image{
+    width: 160px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 10px;
+}

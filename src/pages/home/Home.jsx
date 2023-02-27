@@ -3,7 +3,7 @@ import { Outlet,useNavigate } from "react-router-dom";
 import { createContext } from 'react';
 import {Button,Input} from "antd";
 import "antd/dist/reset.css";
-import "./CSS/Home.css"
+import "./Home.css"
 
 const Context=createContext();
 const { Search } = Input;

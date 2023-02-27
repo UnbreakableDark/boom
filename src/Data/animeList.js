@@ -1,66 +1,122 @@
 export const amimeList=[
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
+        image:require("../assets/Image/rabbithouse.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md191",
         name:"请问您今天要来点兔子吗",
         type:"漫改",
         chapter:12,
         publish:"芳文社"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
+        image:require("../assets/Image/littlebusters.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md3242",
+        name:"Little Busters",
+        type:"游戏改",
+        chapter:24,
+        publish:"key社,J.C.STAFF"
+    },
+    {
+        image:require("../assets/Image/konosuba.jpg"),
+        anime:"http://www.996dm.com/video/1293.html",
+        name:"为美好的世界献上祝福",
+        type:"轻改",
+        chapter:24,
+        publish:"暁 なつめ"
+    },
+    {
+        image:require("../assets/Image/rabbithouse.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md191",
         name:"请问您今天要来点兔子吗",
         type:"漫改",
         chapter:12,
         publish:"芳文社"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
+        image:require("../assets/Image/littlebusters.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md3242",
+        name:"Little Busters",
+        type:"游戏改",
+        chapter:24,
+        publish:"key社,J.C.STAFF"
+    },
+    {
+        image:require("../assets/Image/konosuba.jpg"),
+        anime:"http://www.996dm.com/video/1293.html",
+        name:"为美好的世界献上祝福",
+        type:"轻改",
+        chapter:24,
+        publish:"暁 なつめ"
+    },
+    {
+        image:require("../assets/Image/rabbithouse.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md191",
         name:"请问您今天要来点兔子吗",
         type:"漫改",
         chapter:12,
         publish:"芳文社"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
+        image:require("../assets/Image/littlebusters.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md3242",
+        name:"Little Busters",
+        type:"游戏改",
+        chapter:24,
+        publish:"key社,J.C.STAFF"
+    },
+    {
+        image:require("../assets/Image/konosuba.jpg"),
+        anime:"http://www.996dm.com/video/1293.html",
+        name:"为美好的世界献上祝福",
+        type:"轻改",
+        chapter:24,
+        publish:"暁 なつめ"
+    },
+    {
+        image:require("../assets/Image/rabbithouse.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md191",
         name:"请问您今天要来点兔子吗",
         type:"漫改",
         chapter:12,
         publish:"芳文社"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
+        image:require("../assets/Image/littlebusters.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md3242",
+        name:"Little Busters",
+        type:"游戏改",
+        chapter:24,
+        publish:"key社,J.C.STAFF"
+    },
+    {
+        image:require("../assets/Image/konosuba.jpg"),
+        anime:"http://www.996dm.com/video/1293.html",
+        name:"为美好的世界献上祝福",
+        type:"轻改",
+        chapter:24,
+        publish:"暁 なつめ"
+    },
+    {
+        image:require("../assets/Image/rabbithouse.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md191",
         name:"请问您今天要来点兔子吗",
         type:"漫改",
         chapter:12,
         publish:"芳文社"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
-        name:"请问您今天要来点兔子吗",
-        type:"漫改",
-        chapter:12,
-        publish:"芳文社"
+        image:require("../assets/Image/littlebusters.jpg"),
+        anime:"https://www.bilibili.com/bangumi/media/md3242",
+        name:"Little Busters",
+        type:"游戏改",
+        chapter:24,
+        publish:"key社,J.C.STAFF"
     },
     {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
-        name:"请问您今天要来点兔子吗",
-        type:"漫改",
-        chapter:12,
-        publish:"芳文社"
-    },
-    {
-        image:require("../Source/Image/rabbithouse.jpg"),
-        anime:"https://www.bilibili.com/bangumi/play/ss2762?spm_id_from=333.337.0.0",
-        name:"请问您今天要来点兔子吗",
-        type:"漫改",
-        chapter:12,
-        publish:"芳文社"
+        image:require("../assets/Image/konosuba.jpg"),
+        anime:"http://www.996dm.com/video/1293.html",
+        name:"为美好的世界献上祝福",
+        type:"轻改",
+        chapter:24,
+        publish:"暁 なつめ"
     },
 ]

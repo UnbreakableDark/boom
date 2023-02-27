@@ -1,0 +1,16 @@
+.zcomic-box{
+    margin: 20px 0px;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.zcomic-card{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius:20px;
+}
