@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState,createContext  } from "react";
 import { Outlet,useNavigate } from "react-router-dom";
-import { createContext } from 'react';
 import {Button,Input} from "antd";
 import "antd/dist/reset.css";
 import "./Home.css"
@@ -20,8 +19,9 @@ let defaultUser={
 function Home(props){
     let [user,setUser]=useState(defaultUser);
     let nav=useNavigate();
-    const onSearch=()=>{
-        nav("/search");
+    const onSearch=(value,event)=>{
+        //value search框的值，
+        nav(`/search?condition=${value}`);
     }
 
     return(
@@ -62,7 +62,8 @@ function Home(props){
                     <div className="header-navbar">{user.isLog?user.name:"未登录"}</div>
                     <div className="header-button">
                         <Button type="primary" 
-                            onClick={()=>user.isLog?nav("/space"):nav("/login")}
+                            onClick={()=>user.isLog?nav("/space"):nav("/login") }
+                            
                         >
                             {user.name}
                         </Button>

@@ -1,17 +1,17 @@
 import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Home from './pages/home/Home';
-import ZSpace from './pages/space/ZSpace';
-import Login from "./pages/login/Login";
-import Register from "./pages/register/Register";
-import Forgot from "./pages/forgot/Forgot";
-import UserCenter from "./pages/center/UserCenter";
-import ZSearch from "./pages/search/ZSearch";
-import ZAnime from "./pages/anime/ZAnime";
-import ZMusic from "./pages/music/ZMusic";
-import ZComic from "./pages/comic/ZComic";
-import ZMessage from "./pages/mseeage/ZMessage";
-import ZHistory from "./pages/histoty/ZHistory";
+import Home from './pages/Home/Home';
+import ZSpace from './pages/Space/ZSpace';
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import Forgot from "./pages/Forgot/Forgot";
+import UserCenter from "./pages/Center/UserCenter";
+import ZSearch from "./pages/Search/ZSearch";
+import ZAnime from "./pages/Anime/ZAnime";
+import ZMusic from "./pages/Music/ZMusic";
+import ZComic from "./pages/Comic/ZComic";
+import ZMessage from "./pages/Message/ZMessage";
+import ZHistory from "./pages/History/ZHistory";
 
 
 function App() {

@@ -2,15 +2,25 @@
     margin: 20px 0px;
     display: grid;
     width: 100%;
-    justify-items: center;
-    align-items: center;
+    height: 100%;
 }
 
+.zanime-header{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.zanime-button{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
 .anime-box{
     margin: 20px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     border-radius:20px;

@@ -1,0 +1,21 @@
+.search-box{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+
+.search-header{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-button{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

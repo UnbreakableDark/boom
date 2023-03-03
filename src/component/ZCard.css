@@ -1,0 +1,32 @@
+.card-box{
+    display: grid;
+    margin: 20px;
+}
+.card-list{
+    display: flex;
+    height: 150px;
+    width: 350px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    align-items: center;
+    text-decoration:none;
+    color: black;
+    padding: 20px 10px;
+}
+
+.card-image{
+    display: inline-block;
+    width: 100px;
+    height: 140px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.card-text{
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

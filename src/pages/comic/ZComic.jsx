@@ -1,5 +1,6 @@
 import "./ZComic.css"
-import BookCard from "./components/BookCard"
+//import BookCard from "./components/BookCard"
+import ZCard from "../../component/ZCard";
 import { comicList } from "../../data/comicList";
 
 function ZComic(){
@@ -8,7 +9,7 @@ function ZComic(){
         <div className="zcomic-box">
             <div>comic</div>
             <div className="zcomic-card">
-                {comicData.map((item)=><div><BookCard data={item}/></div>)}
+                {comicData.map((item,index)=><div key={index}><ZCard data={item}/></div>)}
             </div>
         </div>
     )

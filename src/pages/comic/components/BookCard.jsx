@@ -9,7 +9,7 @@ function BookCard(props){
                 <div className="comic-text">
                     <p>{data.name}</p>
                     <p>{data.author}</p>
-                    <p>{data.type}</p>
+                    <p>{data.tag}</p>
                     <p>已完结{' '}共{data.chapter}话</p>
                 </div>
             </a>
