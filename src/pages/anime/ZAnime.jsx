@@ -4,7 +4,7 @@ import "antd/dist/reset.css";
 import { useState,useEffect } from "react";
 import { amimeList } from "../../data/animeList";
 //import AnimeCard from "./components/AnimeCard";
-import ZCard from "../../component/ZCard";
+import ZCard from "../../component/ZCard/ZCard";
 
 
 function ZAnime(){

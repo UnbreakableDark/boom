@@ -1,6 +1,6 @@
 import "./ZComic.css"
 //import BookCard from "./components/BookCard"
-import ZCard from "../../component/ZCard";
+import ZCard from "../../component/ZCard/ZCard";
 import { comicList } from "../../data/comicList";
 
 function ZComic(){

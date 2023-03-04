@@ -1,5 +1,6 @@
 export const comicList=[
     {
+        id:1,
         image:require("../assets/Image/nostudy.jpg"),
         source:"https://manga.bilibili.com/detail/mc26393?from=manga_search",
         name:"我们无法一起学习",
@@ -9,6 +10,7 @@ export const comicList=[
         author:"筒井大志",
     },
     {
+        id:2,
         image:require("../assets/Image/nakanomiku.jpg"),
         source:"https://manga.bilibili.com/detail/mc25756?from=manga_detail",
         name:"五等分的花嫁",
@@ -18,6 +20,7 @@ export const comicList=[
         author:"春場（はるば）ねぎ",
     },
     {
+        id:3,
         image:require("../assets/Image/碧蓝之海.jpg"),
         anime:"https://manga.bilibili.com/detail/mc25969?from=manga_search",
         name:"碧蓝之海",
@@ -26,5 +29,94 @@ export const comicList=[
         chapter:12,
         author:"井上坚二"
     },
-
+    {
+        id:4,
+        image:require("../assets/Image/nostudy.jpg"),
+        source:"https://manga.bilibili.com/detail/mc26393?from=manga_search",
+        name:"我们无法一起学习",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"筒井大志",
+    },
+    {
+        id:5,
+        image:require("../assets/Image/nakanomiku.jpg"),
+        source:"https://manga.bilibili.com/detail/mc25756?from=manga_detail",
+        name:"五等分的花嫁",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"春場（はるば）ねぎ",
+    },
+    {
+        id:6,
+        image:require("../assets/Image/碧蓝之海.jpg"),
+        anime:"https://manga.bilibili.com/detail/mc25969?from=manga_search",
+        name:"碧蓝之海",
+        tag:"搞笑炒股",
+        type:"comic",
+        chapter:12,
+        author:"井上坚二"
+    },
+    {
+        id:7,
+        image:require("../assets/Image/nostudy.jpg"),
+        source:"https://manga.bilibili.com/detail/mc26393?from=manga_search",
+        name:"我们无法一起学习",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"筒井大志",
+    },
+    {
+        id:8,
+        image:require("../assets/Image/nakanomiku.jpg"),
+        source:"https://manga.bilibili.com/detail/mc25756?from=manga_detail",
+        name:"五等分的花嫁",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"春場（はるば）ねぎ",
+    },
+    {
+        id:9,
+        image:require("../assets/Image/碧蓝之海.jpg"),
+        anime:"https://manga.bilibili.com/detail/mc25969?from=manga_search",
+        name:"碧蓝之海",
+        tag:"搞笑炒股",
+        type:"comic",
+        chapter:12,
+        author:"井上坚二"
+    },
+    {
+        id:10,
+        image:require("../assets/Image/nostudy.jpg"),
+        source:"https://manga.bilibili.com/detail/mc26393?from=manga_search",
+        name:"我们无法一起学习",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"筒井大志",
+    },
+    {
+        id:11,
+        image:require("../assets/Image/nakanomiku.jpg"),
+        source:"https://manga.bilibili.com/detail/mc25756?from=manga_detail",
+        name:"五等分的花嫁",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:12,
+        author:"春場（はるば）ねぎ",
+    },
+    {
+        id:12,
+        image:require("../assets/Image/碧蓝之海.jpg"),
+        anime:"https://manga.bilibili.com/detail/mc25969?from=manga_search",
+        name:"碧蓝之海",
+        tag:"搞笑炒股",
+        type:"comic",
+        chapter:12,
+        author:"井上坚二"
+    },
 ]

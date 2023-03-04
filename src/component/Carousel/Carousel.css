@@ -1,0 +1,28 @@
+.carousel-box{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+.carousel-list{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    text-decoration:none;
+}
+
+.carousel-image{
+    width: 480px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.carousel-text{
+    text-align:left;
+    color: black;
+    line-height: 40px;
+    font-size: 32px;
+}

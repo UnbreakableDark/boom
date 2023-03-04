@@ -1,3 +1,7 @@
+.home-box{
+    display: grid;
+}
+
 .header{
     display:flex;
     justify-content: space-between;
@@ -36,4 +40,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home-area{
+    display: grid;
 }

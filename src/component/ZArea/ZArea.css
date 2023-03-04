@@ -1,0 +1,27 @@
+.area-box{
+    margin: 50px 10px;
+    padding: 10px;
+    border: 2px solid #66ccff ;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.area-suggest{
+    display: inline-block;
+}
+
+.area-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.area-a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+ .area-a a{
+    text-decoration: none;
+ }
