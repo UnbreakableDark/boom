@@ -3,7 +3,6 @@ import { Outlet,useNavigate } from "react-router-dom";
 import {Button,Input} from "antd";
 import "antd/dist/reset.css";
 import "./Home.css";
-import ZArea from "../../component/ZArea/ZArea";
 
 const Context=createContext();
 const { Search } = Input;
@@ -93,9 +92,6 @@ function Home(props){
                 </div>
             </header>
                 <Outlet context={[user,setUser]}></Outlet>
-            <div className="home-area">
-            <ZArea></ZArea>
-            </div>
         </div>
         </Context.Provider>
     )

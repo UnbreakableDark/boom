@@ -1,7 +1,7 @@
 .area-box{
     margin: 50px 10px;
     padding: 10px;
-    border: 2px solid #66ccff ;
+    /*border: 2px solid #66ccff ;*/
     border-radius: 10px;
     display:flex;
     justify-content: space-between;

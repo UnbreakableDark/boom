@@ -1,3 +1,4 @@
+//拼写错误 懒得改了 下面有2正确名字版  animeList
 export const amimeList=[
     {
         id:1,
@@ -301,3 +302,5 @@ export const amimeList=[
     },
     //30
 ]
+
+export const animeList=amimeList;

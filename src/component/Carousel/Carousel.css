@@ -2,9 +2,9 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 500px;
-    height: 400px;
     border-radius: 10px;
+    width: 500px;
+    height: 300px;
 }
 .carousel-list{
     display: grid;
@@ -21,8 +21,8 @@
 }
 
 .carousel-text{
-    text-align:left;
+    text-align:center;
     color: black;
-    line-height: 40px;
+    line-height: 48px;
     font-size: 32px;
 }

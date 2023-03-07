@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
+import HomePage from './pages/Home/HomePage';
 import ZSpace from './pages/Space/ZSpace';
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}>
+            <Route index element={<HomePage/>}></Route>
             <Route path="/space" element={<ZSpace/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path="/register" element={<Register/>}></Route>

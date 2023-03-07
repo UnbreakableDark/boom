@@ -1,0 +1,10 @@
+.music-box{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.music-header{
+    text-align: center;
+}
