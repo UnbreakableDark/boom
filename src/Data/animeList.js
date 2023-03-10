@@ -304,3 +304,5 @@ export const amimeList=[
 ]
 
 export const animeList=amimeList;
+
+export default animeList;

@@ -40,3 +40,5 @@ export const animeCarousel=[
         author:"CloverWorks"
     },
 ]
+
+export default animeCarousel;

@@ -58,9 +58,9 @@ function Home(props){
                         style={{width:400,height:16,}} 
                     />
                 </div>
-                <div className="header-box header-nav" >
-                    <div className="header-navbar">{user.isLog?user.name:"未登录"}</div>
-                    <div className="header-button">
+                <div className="header-box" >
+                    <div className="header-button header-nav">
+                        <div className="header-navbar">{user.isLog?user.name:"未登录"}</div>
                         <Button type="primary" 
                             onClick={()=>user.isLog?nav("/space"):nav("/login") }
                             

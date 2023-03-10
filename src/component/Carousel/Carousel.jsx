@@ -5,9 +5,9 @@ import "./Carousel.css"
 
 //父组件传入  data数组（走马灯需要）即可    此页面数据 均以 state为数据源
 //  走马灯图片 尽量往 16 : 9 靠
-
-function ZCarousel({data=animeCarousel}){
-    const [list,setList]=useState(data);
+//取消掉的默认参数{data=animeCarousel}
+function ZCarousel(props){
+    const [list,setList]=useState(props.data);
     return (
         <div>
             <div className="carousel-text">强烈推荐!!!</div>
