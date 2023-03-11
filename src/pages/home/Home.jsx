@@ -13,7 +13,8 @@ let defaultUser={
     password:"",
     name:"登录",
     isLog:false,
-
+    phone:"",
+    searchList:[],
 }
 
 function Home(props){

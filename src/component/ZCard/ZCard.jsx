@@ -8,9 +8,9 @@ function ZCard(props){
                 <div><img src={data.image} alt="" className="card-image"/></div>
                 <div className="card-text">
                     <p>{data.name}</p>
-                    <p>出版：{data.author}</p>
+                    <p>作者：{data.author}</p>
                     <p>类型：{data.tag}</p>
-                    <p>已完结{' '}共{data.chapter}话</p>
+                    <p>时长{" "}{data.chapter}</p>
                 </div>
             </a>
         </div>

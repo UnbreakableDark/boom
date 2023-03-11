@@ -2,14 +2,14 @@ import "./ZAnime.css"
 import {Button,Input} from "antd";
 import "antd/dist/reset.css";
 import { useState,useEffect } from "react";
-import { amimeList } from "../../data/animeList";
+import { animeList } from "../../data/animeList";
 //import AnimeCard from "./components/AnimeCard";
 import ZCard from "../../component/ZCard/ZCard";
 
 
 function ZAnime(){
-    const [aList,setAList]=useState(amimeList);
-    const [pageList,setPageList]=useState(amimeList.slice(0,12))
+    const [aList,setAList]=useState(animeList);
+    const [pageList,setPageList]=useState(animeList.slice(0,12))
     const [amountPage,setAmountPage]=useState(()=>Math.ceil(aList.length/12));
     const [index,setIndex]=useState(1);
     const [skipPage,setSkipPage]=useState(1);
@@ -28,7 +28,7 @@ function ZAnime(){
     }
     const classify=(type)=>{
         //分类
-        let list=amimeList.filter((item,index,array)=>item.tag===type);
+        let list=animeList.filter((item,index,array)=>item.tag===type);
         setAList(list);
         setIndex(1);
     }
@@ -46,7 +46,7 @@ function ZAnime(){
                 </div>
                 <div className="zanime-button">
                     <Button type="primary" 
-                            onClick={()=>{setAList(amimeList);setIndex(1);}} 
+                            onClick={()=>{setAList(animeList);setIndex(1);}} 
                             name="anime" 
                             shape="round"
                     >

@@ -1,0 +1,18 @@
+.play-box{
+    width: 800px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    justify-items: center;
+    align-items: center;
+}
+
+.play-button{
+    margin: 20px;
+    font-size: 32px;
+    color:#66ccff;
+}
+/*
+    border: 2px solid black;
+*/

@@ -8,3 +8,17 @@
 .music-header{
     text-align: center;
 }
+.music-nav{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.music-index{
+    display: grid;
+    width: 600px;
+}
+.music-play{
+    display: grid;
+}
