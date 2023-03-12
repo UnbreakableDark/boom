@@ -34,7 +34,7 @@ export const dataUser=Mock.mock(serverURL+"/login","post",(options)=>{
 });
 //
 export const musicMock=Mock.mock(serverURL+"/music","get",(options)=>{
-    return DataBase.musicList.slice(0,4);
+    return DataBase.musicList;
 });
 
 

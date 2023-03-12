@@ -7,18 +7,16 @@ const MusicPlayContext=createContext();
 
 
 function ZMusic(){
-    const [musicNow,setMusicNow]=useState({})
+    const [musicNowF,setMusicNowF]=useState({})
 
     const playing=(item)=>{
         //兄弟传值中转
-        setMusicNow({...item});
-        console.log(musicNow);
-
+        setMusicNowF({...item});
     }
 
 
     return(
-        <MusicPlayContext.Provider value={musicNow}>
+        <MusicPlayContext.Provider value={musicNowF}>
         <div className="music-box">
             <header className="music-header">
                 <h2>音乐区</h2>
@@ -28,7 +26,7 @@ function ZMusic(){
                     <MusicIndex playing={playing}></MusicIndex>
                 </div>
                 <div className="music-play">
-                <MusicPlay></MusicPlay>
+                <MusicPlay now={musicNowF}></MusicPlay>
                 </div>
             </nav>
         </div>

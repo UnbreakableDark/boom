@@ -73,7 +73,7 @@ function MusicIndex (props){
             renderItem={(item) => (
                 <List.Item key={item.id} id={item.name}>
                         <ZCard data={item} ></ZCard>
-                        <Button onClick={(item)=>playMusic(item)} shape="circle">播放</Button>
+                        <Button onClick={()=>playMusic(item)} shape="circle">播放</Button>
                 </List.Item>
             )}
         />

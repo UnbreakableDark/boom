@@ -10,14 +10,17 @@ import MusicPlayContext from "./MusicPlay"
 const test=DataBase.musicList;
 
 function MusicPlay(props){
+    const now=props.now;
     const [musicList,setMusicList]=useState(test);
-    const [musicNow,setMusicNow]=useState(test[0])
+    const [musicNow,setMusicNow]=useState({});
 
     //let musicNow=useContext(MusicPlayContext);
 
+
     useEffect(()=>{
-        setMusicNow(test[0]);
-    },[])
+        if(now){setMusicNow({...now});}
+        //else {setMusicNow({...test[0]});}
+    },[now])
 
     //  音乐播放用
 
@@ -41,7 +44,7 @@ function MusicPlay(props){
     const nextMusic=()=>{
         if(musicNow.id===musicList.length){alert("已经是最后一首了")}
         else{
-            //setMusicNow(musicList[musicNow.id]);
+            setMusicNow(musicList[musicNow.id]);
         }
     }
 
@@ -49,13 +52,13 @@ function MusicPlay(props){
         
         <div className="play-box">
             <div>
-                <img src="./nostudy.jpg" alt="22"/>    
+                <img src={require("./nostudy.jpg")} className="play-icon" alt="22"/>    
             </div>
             <div>
                 <ZCard data={musicNow}></ZCard>
             </div>
             <div>
-                <audio src={musicNow.source}  ref={playRef} ></audio>
+                <audio src={musicNow.source}  ref={playRef} autoPlay></audio>
             </div>
             <div>
                 <StepBackwardOutlined 
