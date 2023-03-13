@@ -37,6 +37,19 @@ export const musicMock=Mock.mock(serverURL+"/music","get",(options)=>{
     return DataBase.musicList;
 });
 
+export const registerMock=Mock.mock(serverURL+"/register","post",(options)=>{
+    let user=JSON.parse(options.body);
+    if(DataBase.userList.find((item)=>item.account===user.account)){
+        user.registerTime=false;
+        user.mistake="该账户已注册"
+        //console.log(user,"-");
+        return user
+    }else{
+        user.registerTime=new Date();
+        DataBase.userList.push(user);
+        return user;
+    }
+})
 
  /*
     if(DataBase.userList.filter((item,index,array)=> item.account===opt.account)){

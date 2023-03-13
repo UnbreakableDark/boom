@@ -11,10 +11,12 @@ const { Search } = Input;
 let defaultUser={
     account:"",
     password:"",
-    name:"登录",
+    name:"",
     isLog:false,
     phone:"",
+    registerTime:"",
     searchList:[],
+    mistake:"错误信息"
 }
 
 function Home(props){
@@ -66,7 +68,7 @@ function Home(props){
                             onClick={()=>user.isLog?nav("/space"):nav("/login") }
                             
                         >
-                            {user.name}
+                            登录
                         </Button>
                     </div>
                     <div className="header-button">

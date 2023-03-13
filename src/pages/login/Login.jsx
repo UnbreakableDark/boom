@@ -11,7 +11,7 @@ import "../../data/mock.js"
 const serverURL=Global.server;
 
 
-export default function Login(props){
+function Login(props){
     let [user,setUser]=useOutletContext();
     let navigate=useNavigate();
     const changeAccount=(e)=>{
@@ -28,7 +28,7 @@ export default function Login(props){
             if(res.data.isLog==="账号未注册"){ alert("账号未注册")}
             if(res.data.isLog==="密码错误"){ alert("密码错误")}
             if(res.data.isLog===true){
-                setUser({...res.data,});
+                setUser({...user,...res.data,});
                 alert("欢迎回来"+res.data.name);
                 navigate("/");
             }
@@ -79,7 +79,7 @@ export default function Login(props){
     )
 }
 
-
+export default Login;
 
 
 

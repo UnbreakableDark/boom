@@ -52,7 +52,7 @@ function MusicPlay(props){
         
         <div className="play-box">
             <div>
-                <img src={require("./nostudy.jpg")} className="play-icon" alt="22"/>    
+                <img src={require("../../../assets/Image/musicplay.jpg")} className="play-icon" alt="22"/>    
             </div>
             <div>
                 <ZCard data={musicNow}></ZCard>
