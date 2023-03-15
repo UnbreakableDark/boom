@@ -47,9 +47,49 @@ export const registerMock=Mock.mock(serverURL+"/register","post",(options)=>{
     }else{
         user.registerTime=new Date();
         DataBase.userList.push(user);
+        user.isLog=true;
         return user;
     }
 })
+
+export const forgotMock=Mock.mock(serverURL+"/forgot","post",(options)=>{
+    let user=JSON.parse(options.body);
+    let now=DataBase.userList.find((item)=>item.account===user.account);
+    if(now.phone===user.phone){
+        now.password=user.password;
+        return {
+            forgot:true,
+            mistake:""
+        }
+    }else{
+        //user.mistake="未注册或预留手机号错误";
+        return {
+            forgot:false,
+            mistake:"未注册或预留手机号错误",
+        }
+    }
+})
+
+export const centerMock=Mock.mock(serverURL+"/center","post",(options)=>{
+    const changeUser=JSON.parse(options.body);
+    let now=null;
+    DataBase.userList.map((item,index,array)=>{
+        if(item.account===changeUser.account){now=index}
+    })
+    //alert(now)
+    if(now!==null){
+        DataBase.userList[now]=changeUser;
+        return {
+            result:true,
+        }
+    }else{
+        return {
+            result:false,
+            mistake:"修改失败 原因未知"
+        }
+    }
+})
+
 
  /*
     if(DataBase.userList.filter((item,index,array)=> item.account===opt.account)){

@@ -1,7 +1,9 @@
 function ZSpace(props){
     return(
-        <div>
-            <p>个人空间</p>
+        <div className="space-box">
+            <div className="space-list">
+                <div className="space-item"></div>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,35 @@
+.center-container{
+    margin: 20px auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 1072px;
+    height: 603px;
+    background-image: linear-gradient(to right ,#66ccff, #66ccff);
+    border-radius: 25px;
+}
+/*#597ef7*/
+.center-head{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.center-list{
+    display: grid;
+    justify-items: left;
+    align-items: center;
+}
+.center-item{
+    display: flex;
+    align-items: center;
+}
+.center-text{
+    width: 100px;
+    display: inline-block;
+    padding: auto;
+}
+
+.center-button{
+    background: white;
+}

@@ -1,6 +1,7 @@
 import { useState,createContext  } from "react";
 import { Outlet,useNavigate } from "react-router-dom";
 import {Button,Input} from "antd";
+import Global from "../../data/global";
 import "antd/dist/reset.css";
 import "./Home.css";
 
@@ -8,16 +9,7 @@ const Context=createContext();
 const { Search } = Input;
 
 
-let defaultUser={
-    account:"",
-    password:"",
-    name:"",
-    isLog:false,
-    phone:"",
-    registerTime:"",
-    searchList:[],
-    mistake:"错误信息"
-}
+let defaultUser=Global.user;
 
 function Home(props){
     let [user,setUser]=useState(defaultUser);

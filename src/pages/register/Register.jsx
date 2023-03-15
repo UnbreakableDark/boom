@@ -46,8 +46,9 @@ function Register(props){
                     const res=await axios.post(serverURL+"/register",user);
                     if(res.data.registerTime){
                         setUser({...user,...res.data});
-                        alert("注册成功,欢迎新人:",user.name);
-                        nav("/")
+                        alert(`注册成功,欢迎新人:${user.name}`);
+                        nav("/");
+                        //console.log(user);
                     }else{
                         alert(`注册失败 ${res.data.mistake}`)
                     }
@@ -111,7 +112,7 @@ function Register(props){
                 <div>
                     <div className="register-text">联系电话：</div>
                     <Input  
-                        type="password"
+                        type="text"
                         value={user.phone}
                         name="password"
                         onChange={(e)=>{debounce(changePhone(e),500)}}

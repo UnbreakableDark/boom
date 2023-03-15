@@ -1,0 +1,6 @@
+.space-box{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}

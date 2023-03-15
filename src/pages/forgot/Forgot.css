@@ -1,23 +1,43 @@
 
-.box {
+.register-box {
     margin: 20px auto;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
     width: 1072px;
     height: 603px;
     background-image: linear-gradient(to right ,#66ccff, #597ef7);
     border-radius: 25px;
 }
-.login {
-    margin: auto;
+
+.register {
     display:grid;
-    justify-items: center;
     align-items: center;
+    justify-items: center;
     column-gap: 10px;
     row-gap: 0px;
-    width: 400px;
 }
-.login div {
+
+.register-text{
+    width: 80px;
+    display: inline-block;
+    padding: auto;
+}
+
+.register-head{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color:azure;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.register div {
     margin:10px
 }
+
+/*
+    调试用
+    border: 1px solid black;
+*/
