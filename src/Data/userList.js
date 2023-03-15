@@ -1,10 +1,4 @@
-const searchs=[
-    {
-        time:"",
-        search:"",
-        searchURL:"",
-    }
-]
+import { searchList } from "./searchList";
     
 const userList=[
     {
@@ -13,7 +7,7 @@ const userList=[
         name:"琴·古恩希尔德",
         isLog:true,
         phone:"13312345678",
-        searchList:[],
+        searchList:[...searchList],
         mistake:"",
         registerTime:"2013-11-11",
         motto:"听凭风引",

@@ -5,10 +5,9 @@
     align-items: center;
     width: 1072px;
     height: 603px;
-    background-image: linear-gradient(to right ,#66ccff, #66ccff);
     border-radius: 25px;
 }
-/*#597ef7*/
+/* background-image: linear-gradient(to right ,#66ccff, #597ef7); */
 .center-head{
     display: grid;
     justify-items: center;
@@ -19,6 +18,7 @@
     display: grid;
     justify-items: left;
     align-items: center;
+    gap: 10px;
 }
 .center-item{
     display: flex;

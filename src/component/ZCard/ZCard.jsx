@@ -10,7 +10,7 @@ function ZCard(props){
                     <p>{data.name}</p>
                     <p>作者：{data.author}</p>
                     <p>类型：{data.tag}</p>
-                    <p>时长{" "}{data.chapter}</p>
+                    <p>时长：{" "}{data.chapter}</p>
                 </div>
             </a>
         </div>

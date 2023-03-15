@@ -23,7 +23,7 @@ export const amimeList=[
     {
         id:3,
         image:require("../assets/Image/konosuba.jpg"),
-        anime:"http://www.996dm.com/video/1293.html",
+        source:"http://www.996dm.com/video/1293.html",
         name:"为美好的世界献上祝福",
         tag:"轻改",
         type:"anime",
@@ -33,7 +33,7 @@ export const amimeList=[
     {
         id:4,
         image:require("../assets/Image/我们的重置人生.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28234556",
+        source:"https://www.bilibili.com/bangumi/media/md28234556",
         name:"我们的重置人生",
         tag:"轻改",
         type:"anime",
@@ -43,7 +43,7 @@ export const amimeList=[
     {
         id:5,
         image:require("../assets/Image/碧蓝之海.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md102312",
+        source:"https://www.bilibili.com/bangumi/media/md102312",
         name:"碧蓝之海",
         tag:"漫改",
         type:"anime",
@@ -53,7 +53,7 @@ export const amimeList=[
     {
         id:6,
         image:require("../assets/Image/相合之物1.jfif"),
-        anime:"https://www.bilibili.com/bangumi/media/md28237283",
+        source:"https://www.bilibili.com/bangumi/media/md28237283",
         name:"相合之物",
         tag:"漫改",
         type:"anime",
@@ -63,7 +63,7 @@ export const amimeList=[
     {
         id:7,
         image:require("../assets/Image/纯白交响曲.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md868",
+        source:"https://www.bilibili.com/bangumi/media/md868",
         name:"纯白交响曲",
         tag:"游戏改",
         type:"anime",
@@ -73,7 +73,7 @@ export const amimeList=[
     {
         id:8,
         image:require("../assets/Image/辉夜大小姐想让我告白.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md5267730",
+        source:"https://www.bilibili.com/bangumi/media/md5267730",
         name:"辉夜大小姐想让我告白",
         tag:"漫改",
         type:"anime",
@@ -83,7 +83,7 @@ export const amimeList=[
     {
         id:9,
         image:require("../assets/Image/街角魔族.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28221404",
+        source:"https://www.bilibili.com/bangumi/media/md28221404",
         name:"街角魔族",
         tag:"漫改",
         type:"anime",
@@ -93,7 +93,7 @@ export const amimeList=[
     {
         id:10,
         image:require("../assets/Image/天才王子的赤字国家振兴术.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28235846",
+        source:"https://www.bilibili.com/bangumi/media/md28235846",
         name:"天才王子的赤字国家振兴术",
         tag:"轻改",
         type:"anime",
@@ -103,7 +103,7 @@ export const amimeList=[
     {
         id:11,
         image:require("../assets/Image/樱花庄的宠物女孩.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md687",
+        source:"https://www.bilibili.com/bangumi/media/md687",
         name:"樱花庄的宠物女孩",
         tag:"轻改",
         type:"anime",
@@ -113,7 +113,7 @@ export const amimeList=[
     {
         id:12,
         image:require("../assets/Image/樱花任务.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md5992",
+        source:"https://www.bilibili.com/bangumi/media/md5992",
         name:"樱花任务",
         tag:"原创",
         type:"anime",
@@ -123,7 +123,7 @@ export const amimeList=[
     {
         id:13,
         image:require("../assets/Image/SSSSDYNAZENON.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28233915",
+        source:"https://www.bilibili.com/bangumi/media/md28233915",
         name:"SSSS.DYNAZENON",
         tag:"原创",
         type:"anime",
@@ -133,7 +133,7 @@ export const amimeList=[
     {
         id:14,
         image:require("../assets/Image/奇蛋物语.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28231851",
+        source:"https://www.bilibili.com/bangumi/media/md28231851",
         name:"奇蛋物语",
         tag:"原创",
         type:"anime",
@@ -143,7 +143,7 @@ export const amimeList=[
     {
         id:15,
         image:require("../assets/Image/悠哉日常大王.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28231846",
+        source:"https://www.bilibili.com/bangumi/media/md28231846",
         name:"悠哉日常大王",
         tag:"漫改",
         type:"anime",
@@ -153,7 +153,7 @@ export const amimeList=[
     {
         id:16,
         image:require("../assets/Image/kon.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28220978",
+        source:"https://www.bilibili.com/bangumi/media/md28220978",
         name:"轻音少女",
         tag:"漫改",
         type:"anime",
@@ -163,7 +163,7 @@ export const amimeList=[
     {
         id:17,
         image:require("../assets/Image/架向星空之桥.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md919",
+        source:"https://www.bilibili.com/bangumi/media/md919",
         name:"架向星空之桥",
         tag:"游戏改",
         type:"anime",
@@ -173,7 +173,7 @@ export const amimeList=[
     {
         id:18,
         image:require("../assets/Image/龙与虎.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md1672",
+        source:"https://www.bilibili.com/bangumi/media/md1672",
         name:"龙与虎",
         tag:"轻改",
         type:"anime",
@@ -183,7 +183,7 @@ export const amimeList=[
     {
         id:19,
         image:require("../assets/Image/迷糊餐厅1.png"),
-        anime:"https://www.bilibili.com/bangumi/media/md866",
+        source:"https://www.bilibili.com/bangumi/media/md866",
         name:"迷糊餐厅",
         tag:"漫改",
         type:"anime",
@@ -193,7 +193,7 @@ export const amimeList=[
     {
         id:20,
         image:require("../assets/Image/玉子市场.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md116772",
+        source:"https://www.bilibili.com/bangumi/media/md116772",
         name:"玉子市场",
         tag:"原创",
         type:"anime",
@@ -203,7 +203,7 @@ export const amimeList=[
     {
         id:21,
         image:require("../assets/Image/超炮.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28224095",
+        source:"https://www.bilibili.com/bangumi/media/md28224095",
         name:"某科学的超电磁炮",
         tag:"漫改",
         type:"anime",
@@ -213,7 +213,7 @@ export const amimeList=[
     {
         id:22,
         image:require("../assets/Image/春物.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28228386",
+        source:"https://www.bilibili.com/bangumi/media/md28228386",
         name:"我的青春恋爱物语果然有问题",
         tag:"轻改",
         type:"anime",
@@ -223,7 +223,7 @@ export const amimeList=[
     {
         id:23,
         image:require("../assets/Image/22no7.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md28223859",
+        source:"https://www.bilibili.com/bangumi/media/md28223859",
         name:"22/7",
         tag:"原创",
         type:"anime",
@@ -233,7 +233,7 @@ export const amimeList=[
     {
         id:24,
         image:require("../assets/Image/笨测召.png"),
-        anime:"https://www.bilibili.com/bangumi/media/md842",
+        source:"https://www.bilibili.com/bangumi/media/md842",
         name:"笨蛋，测验，召唤兽",
         tag:"漫改",
         type:"anime",
@@ -243,7 +243,7 @@ export const amimeList=[
     {
         id:25,
         image:require("../assets/Image/JustBecause.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md6427",
+        source:"https://www.bilibili.com/bangumi/media/md6427",
         name:"Just Because",
         tag:"原创",
         type:"anime",
@@ -253,7 +253,7 @@ export const amimeList=[
     {
         id:26,
         image:require("../assets/Image/月色真美.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md5989",
+        source:"https://www.bilibili.com/bangumi/media/md5989",
         name:"月色真美",
         tag:"原创",
         type:"anime",
@@ -263,7 +263,7 @@ export const amimeList=[
     {
         id:27,
         image:require("../assets/Image/luckystar.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md1293",
+        source:"https://www.bilibili.com/bangumi/media/md1293",
         name:"幸运星",
         tag:"漫改",
         type:"anime",
@@ -273,7 +273,7 @@ export const amimeList=[
     {
         id:28,
         image:require("../assets/Image/冰菓.jpg"),
-        anime:"https://www.bilibili.com/bangumi/media/md3398",
+        source:"https://www.bilibili.com/bangumi/media/md3398",
         name:"冰菓",
         tag:"轻改",
         type:"anime",
@@ -283,7 +283,7 @@ export const amimeList=[
     {
         id:29,
         image:require("../assets/Image/旋风管家.png"),
-        anime:"https://www.bilibili.com/bangumi/media/md4435",
+        source:"https://www.bilibili.com/bangumi/media/md4435",
         name:"旋风管家",
         tag:"漫改",
         type:"anime",
@@ -293,7 +293,7 @@ export const amimeList=[
     {
         id:30,
         image:require("../assets/Image/此花亭奇谭.png"),
-        anime:"https://www.bilibili.com/bangumi/media/md6425",
+        source:"https://www.bilibili.com/bangumi/media/md6425",
         name:"此花亭奇谭",
         tag:"漫改",
         type:"anime",

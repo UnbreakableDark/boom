@@ -19,10 +19,10 @@ class Global{
         level:0,
         exp:0,
         career:"",
-    }
+    };
 }
 
-//Global.user=DataBase.userList[0];
+Global.user=DataBase.userList[0];
 
 
 

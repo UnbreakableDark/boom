@@ -1,0 +1,6 @@
+.history-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}

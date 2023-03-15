@@ -91,6 +91,14 @@ export const centerMock=Mock.mock(serverURL+"/center","post",(options)=>{
 })
 
 
+export const searchListMock=Mock.mock(serverURL+"/searchlist","post",(options)=>{
+    let user=JSON.parse(options.body);
+    let now=DataBase.userList.find((item)=>item.account===user.account);
+    now.searchList=user.searchList;
+
+})
+
+
  /*
     if(DataBase.userList.filter((item,index,array)=> item.account===opt.account)){
         user={

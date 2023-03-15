@@ -4,9 +4,12 @@ import {Button,Input} from "antd";
 import Global from "../../data/global";
 import "antd/dist/reset.css";
 import "./Home.css";
+import axios from "axios";
+import "../../data/mock.js"
 
 const Context=createContext();
 const { Search } = Input;
+const serverURL=Global.server;
 
 
 let defaultUser=Global.user;
@@ -16,6 +19,15 @@ function Home(props){
     let nav=useNavigate();
     const onSearch=(value,event)=>{
         //value search框的值，
+        let search={
+            time:new Date(),
+            condition:value
+        }
+        //user.searchList.push(search);
+        let list=[...user.searchList];
+        list.push(search);
+        setUser({...user,searchList:list})
+        axios.post(serverURL+"/searchlist",user);
         nav(`/search?condition=${value}`);
     }
 
