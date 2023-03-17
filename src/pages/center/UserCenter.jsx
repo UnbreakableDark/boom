@@ -64,7 +64,7 @@ function UserCenter(props){
                 <h2>个人中心</h2>
                 <span>——为了更好的了解您，请完善您的个人信息</span>
             </div>
-            <form className="center-list">
+            <form className="center-form">
                 <div className="center-item">
                     <div className="center-text">用户名：</div>
                     <Input 
@@ -73,7 +73,7 @@ function UserCenter(props){
                         name="name"
                         //onChange={(e)=>{debounce(changeName(e),500)}}
                         className="center-button"
-                        style={{width:200}}
+                        style={{width:200,backgroundColor:"white"}}
                         disabled
                     />
                 </div>
@@ -85,7 +85,7 @@ function UserCenter(props){
                         name="account"
                         //onChange={(e)=>{debounce(changeName(e),500)}}
                         className="center-button"
-                        style={{width:200}}
+                        style={{width:200,backgroundColor:"white"}}
                         disabled
                     />
                 </div>
@@ -97,7 +97,7 @@ function UserCenter(props){
                         name="registerTime"
                         //onChange={(e)=>{debounce(changeName(e),500)}}
                         className="center-button"
-                        style={{width:200}}
+                        style={{width:200,backgroundColor:"white"}}
                         disabled
                     />
                 </div>

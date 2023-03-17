@@ -6,12 +6,12 @@ export  function handlerTime(time){
     let hour=time.getHours();
     let minute=time.getMinutes();
     let second=time.getSeconds();
-    let day=weakday(time.getDay());//周几  0-6  周天-周六
+    let day=weekday(time.getDay());//周几  0-6  周天-周六
 
-    return `${year} ${month+1} ${date} (${day}) : ${hour} : ${minute}`
+    return `${year}  ${month+1} ${date} (${day}) : ${hour} : ${minute}`
 }
 
-function weakday(day){
+function weekday(day){
     switch(day){
         case 0 : return "星期日"; 
         case 1 : return "星期一"; 

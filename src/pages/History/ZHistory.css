@@ -4,3 +4,14 @@
     align-items: center;
     margin-top: 50px;
 }
+
+.history-box {
+    display: flex;
+    justify-content: center;
+}
+
+.history-line{
+    display: grid;
+    align-items: center;
+    width: 400px; 
+}

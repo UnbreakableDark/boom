@@ -22,7 +22,7 @@ class Global{
     };
 }
 
-Global.user=DataBase.userList[0];
+Global.user=DataBase.userList[0];//完美展示
 
 
 

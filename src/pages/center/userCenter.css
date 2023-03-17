@@ -6,6 +6,7 @@
     width: 1072px;
     height: 603px;
     border-radius: 25px;
+    background-image: linear-gradient(to right ,#66ccff, #597ef7);
 }
 /* background-image: linear-gradient(to right ,#66ccff, #597ef7); */
 .center-head{
@@ -14,9 +15,9 @@
     align-items: center;
 }
 
-.center-list{
+.center-form{
     display: grid;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
     gap: 10px;
 }

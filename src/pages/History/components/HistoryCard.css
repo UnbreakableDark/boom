@@ -9,10 +9,12 @@
 .hcard-list{
     display: grid;
     align-items: center;
-    width: 800px;
+    width: 600px;
     height: 100px;
     margin: 10px;
-    border: 1px solid blue;
+    padding:10px;
+    border-radius: 20px;
+    border:1px solid #1890ff;
 }
 .hcard-time{
     font-size:24px;

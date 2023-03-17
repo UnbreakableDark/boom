@@ -8,16 +8,19 @@ import "./Carousel.css"
 //取消掉的默认参数{data=animeCarousel}
 function ZCarousel(props){
     const [list,setList]=useState(props.data);
+    const playAnime=(source)=>{
+        window.open(source);
+    }
     return (
         <div>
             <div className="carousel-text">强烈推荐!!!</div>
             <Carousel autoplay className="carousel-box"> 
                 {list.map((item,index,array)=>{
                     return(
-                    <a key={index} className="carousel-list" href={item.source}>
-                        <a href={item.source}>{item.name}</a>
+                    <div key={index} className="carousel-list" onClick={()=>playAnime(item.source)}>
+                        <p>{item.name}</p>
                         <img src={item.image} alt="" className="carousel-image"/>
-                    </a>
+                    </div>
                     
                     )
                 })}
