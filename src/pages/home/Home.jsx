@@ -77,7 +77,7 @@ function Home(props){
                     </div>
                     <div className="header-button">
                         <Button type="primary" 
-                            onClick={()=>user.isLog?nav("/message"):nav("/login")}  
+                            onClick={()=>nav("/message")}  
                         >
                             消息
                         </Button>

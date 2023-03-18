@@ -6,16 +6,19 @@ import "./Home.css";
 import ZArea from "../../component/ZArea/ZArea";
 import { animeCarousel } from "../../data/animeCarousel";
 import { animeList } from "../../data/animeList";
-import {comicList} from "../../data/comicList"
-import {musicList} from "../../data/musicList"
+import {comicList,comicCarousel} from "../../data/comicList"
+import {musicList,musicCarousel} from "../../data/musicList"
+import Global from "../../data/global";
 
-let anime=animeCarousel;
+let animec=animeCarousel;
+let comicc=comicCarousel;
+let muiscc=musicCarousel;
 
 
 function HomePage(props){
-    const [animeCarousel,setAnimeCarousel]=useState(anime);
-    const [musicCarousel,setMusicCarousel]=useState(anime);
-    const [comicCarousel,setComicCarousel]=useState(anime);
+    const [animeCarousel,setAnimeCarousel]=useState(animec);
+    const [musicCarousel,setMusicCarousel]=useState(muiscc);
+    const [comicCarousel,setComicCarousel]=useState(comicc);
     /*
     useEffect(()=>{
         setAnimeCarousel([...animeCarousel,...anime]);
@@ -25,7 +28,10 @@ function HomePage(props){
     */
 
     return (
-        <div>
+        <div className="home-container">
+            <div className="home-guide">
+                <h2>网站引导 请看消息</h2>
+            </div>
              <div className="home-area">
                 <ZArea data={animeCarousel} typeList={animeList.slice(0,4)}></ZArea>
                 <ZArea data={musicCarousel} typeList={musicList.slice(0,4)}></ZArea>

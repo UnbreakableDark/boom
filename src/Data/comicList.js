@@ -1,3 +1,46 @@
+export const comicCarousel=[
+    {
+        id:1,
+        image:require("../assets/Image/nolearn.jpg"),
+        source:"https://manga.bilibili.com/detail/mc26393?from=manga_search",
+        name:"我们无法一起学习",
+        tag:"校园恋爱",
+        type:"comic",
+        chapter:187,
+        author:"筒井大志",
+    },
+    {
+        id:6,
+        image:require("../assets/Image/fgoC.png"),
+        source:"https://manga.bilibili.com/detail/mc25840?from=manga_index",
+        name:"Fate/Grand Order",
+        tag:"Fate",
+        type:"comic",
+        chapter:220,
+        author:"角川集团"
+    },
+    {
+        id:12,
+        image:require("../assets/Image/newgameC.png"),
+        source:"https://manga.bilibili.com/detail/mc29726?from=manga_index",
+        name:"NEW GAME",
+        tag:"职场 芳文社",
+        type:"comic",
+        chapter:180,
+        author:"得能正太郎"
+    },
+    {
+        id:11,
+        image:require("../assets/Image/悠哉日常大王C.jpg"),
+        source:"https://manga.bilibili.com/detail/mc28552?from=manga_index",
+        name:"悠哉日常大王",
+        tag:"治愈系",
+        type:"comic",
+        chapter:127,
+        author:"角川集团",
+    },
+]
+
 export const comicList=[
     {
         id:1,

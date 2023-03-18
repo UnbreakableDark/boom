@@ -42,3 +42,4 @@ export const animeCarousel=[
 ]
 
 export default animeCarousel;
+

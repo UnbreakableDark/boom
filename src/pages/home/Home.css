@@ -44,4 +44,16 @@
 
 .home-area{
     display: grid;
+    
+}
+
+.home-container{
+    display: grid;
+    margin: 20px 0;
+}
+.home-guide{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid blue;
 }
