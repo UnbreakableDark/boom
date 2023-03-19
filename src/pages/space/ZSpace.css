@@ -1,6 +1,19 @@
 .space-box{
+    margin: 20px 0;
+    display: grid;
+    align-items: center;
+}
+
+.space-header{
     display: grid;
     justify-items: center;
+    align-items: center;   
+}
+
+.space-table{
+    display: grid;
     align-items: center;
-    gap: 10px;
+    border: 1px solid blue;
+    padding :10px;
+    width: 300px;
 }

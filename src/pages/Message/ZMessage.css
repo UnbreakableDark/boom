@@ -1,0 +1,6 @@
+.message-box{
+    display: grid;
+    margin: 20px 0;
+    justify-items: center;
+    align-items: center;
+}

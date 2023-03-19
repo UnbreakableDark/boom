@@ -22,7 +22,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}>
             <Route index element={<HomePage/>}></Route>
-            <Route path="/space" element={<ZSpace/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
             <Route path="/forgot" element={<Forgot/>}></Route>
@@ -39,5 +38,7 @@ function App() {
     </div>
   );
 }
+
+//暂时废弃的路由 <Route path="/space" element={<ZSpace/>}></Route>
 
 export default App;

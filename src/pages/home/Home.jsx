@@ -1,6 +1,6 @@
 import { useState,createContext  } from "react";
 import { Outlet,useNavigate } from "react-router-dom";
-import {Button,Input} from "antd";
+import {Button,Input,Drawer} from "antd";
 import Global from "../../data/global";
 import "antd/dist/reset.css";
 import "./Home.css";
@@ -13,9 +13,14 @@ const serverURL=Global.server;
 
 
 let defaultUser=Global.user;
+let defaultMap=new Map(Object.entries(defaultUser));
+//第二种显示对象元素的方法
+//let defaultValue=Object.values(defaultUser);
+//{defaultValue[index].toString()
 
 function Home(props){
     let [user,setUser]=useState(defaultUser);
+    const [drawerState,setDrawerState]=useState(false);
     let nav=useNavigate();
     const onSearch=(value,event)=>{
         //value search框的值，
@@ -29,6 +34,14 @@ function Home(props){
         setUser({...user,searchList:list})
         axios.post(serverURL+"/searchlist",user);
         nav(`/search?condition=${value}`);
+    }
+
+    const drawerOpen=()=>{
+        //抽屉打开
+        setDrawerState(true);
+    }
+    const drawerClose=()=>{
+        setDrawerState(false);
     }
 
     return(
@@ -67,9 +80,9 @@ function Home(props){
                 </div>
                 <div className="header-box" >
                     <div className="header-button header-nav">
-                        <div className="header-navbar">{user.isLog?user.name:"未登录"}</div>
+                        <div className="header-navbar">{user.isLog?<div><p>{user.name}</p><p>点击按钮获取详情</p></div>:"未登录"}</div>
                         <Button type="primary" 
-                            onClick={()=>user.isLog?nav("/space"):nav("/login") }
+                            onClick={()=>user.isLog?drawerOpen():nav("/login") }
                             
                         >
                             登录
@@ -99,6 +112,24 @@ function Home(props){
                 </div>
             </header>
                 <Outlet context={[user,setUser]}></Outlet>
+
+                <Drawer
+                    title="user测试数据"
+                    placement="left"
+                    onClose={drawerClose}
+                    open={drawerState}
+                    key={1}
+                >
+                   <div>
+                    <h2>下面是测试对象(当前登录的user)的具体数据 </h2>
+                    {Object.keys(defaultUser).map((item,index)=>(
+                        <div>
+                            <p key={item}>{item}:{defaultMap.get(item).toString()}</p>
+                        </div>
+                    ))}
+                   </div>
+                </Drawer>
+
         </div>
         </Context.Provider>
     )

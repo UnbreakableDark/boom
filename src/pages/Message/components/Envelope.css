@@ -1,0 +1,9 @@
+.envelope-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-bottom: 10px solid red;
+    background-image: url("./信封no.png");
+}
